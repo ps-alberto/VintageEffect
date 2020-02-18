@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>CSS - Vintage Photo Effect</title>
+        <meta name="description" content="This is an example how to generate randomly a CSS Vintage effect on some photos">
+        <meta name="keywords" content="">
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro Alberto">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <style type="text/css">
+
+            body{
+                background: #333;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                display: block;
+                margin:0;
+
+            }
+
+            .outer {
+                display: table;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .middle {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .inner {
+                margin-left: auto;
+                margin-right: auto;
+                width: 780px;
+            }
+
+            .retro {
+                float: left;
+                margin:10px;
+                display: table;
+                -webkit-box-shadow:  inset 0px 0px 54px rgba(0, 0, 0, .5);
+                -moz-box-shadow: inset 0px 0px 54px rgba(0, 0, 0, .5);
+                box-shadow: inset 0px 0px 54px rgba(0, 0, 0, .5);
+            }
+
+            .angle_t{
+                background: -webkit-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -webkit-linear-gradient(310deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: -moz-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -moz-linear-gradient(310deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), linear-gradient(310deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+            }
+
+            .angle_r{
+                background: -webkit-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -webkit-linear-gradient(220deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: -moz-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -moz-linear-gradient(220deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), linear-gradient(220deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+            }
+
+            .angle_b{
+                background: -webkit-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -webkit-linear-gradient(120deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: -moz-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -moz-linear-gradient(120deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), linear-gradient(120deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+            }
+
+            .angle_l{
+                background: -webkit-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -webkit-linear-gradient(60deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: -moz-linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), -moz-linear-gradient(60deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+                background: linear-gradient(top, rgba(255,146,0,0.2) 0%, rgba(255,230,48,0.2) 62%), linear-gradient(60deg, rgba(255, 0, 0, 0.5) 0%, rgba(255,0,0,0) 37%);
+            }
+
+            .retro img { 
+                vertical-align: middle;
+                border-style: none;
+                position: relative; 
+                z-index: -1; 
+                filter: sepia(20%) brightness(130%) contrast(110%);
+                -webkit-filter: sepia(20%) brightness(130%) contrast(110%);
+                -moz-filter: sepia(20%) brightness(130%) contrast(110%);
+            }
+
+        </style>
+        
+    </head>
+
+<body>
+
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <div class="retro angle_t ">
+                    <img src="http://aindahatempo.com/uploaded/7.jpg" alt="" />
+                </div>
+                <div class="retro angle_l ">
+                    <img src="http://aindahatempo.com/uploaded/7.jpg" alt="" />
+                </div>
+                <div class="retro angle_r ">
+                    <img src="http://aindahatempo.com/uploaded/7.jpg" alt="" />
+                </div>
+                <div class="retro angle_b ">
+                    <img src="http://aindahatempo.com/uploaded/7.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
